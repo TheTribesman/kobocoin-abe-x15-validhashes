@@ -1,0 +1,87 @@
+Abe initialized.
+Content-Type: text/html
+
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>&lt;type 'exceptions.IndexError'&gt;</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 2.7.6: /usr/bin/python<br>Thu Apr  9 19:45:01 2015</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///usr/lib/python2.7/dist-packages/flup/server/fcgi_base.py">/usr/lib/python2.7/dist-packages/flup/server/fcgi_base.py</a> in <strong>run</strong>(self=&lt;flup.server.fcgi_base.CGIRequest object&gt;)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;556</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""Runs&nbsp;the&nbsp;handler,&nbsp;flushes&nbsp;the&nbsp;streams,&nbsp;and&nbsp;ends&nbsp;the&nbsp;request."""<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;557</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try:<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;558</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;protocolStatus,&nbsp;appStatus&nbsp;=&nbsp;self.server.handler(self)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;559</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;except:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;560</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;traceback.print_exc(file=self.stderr)<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">protocolStatus <em>undefined</em>, appStatus <em>undefined</em>, <strong>self</strong>&nbsp;= &lt;flup.server.fcgi_base.CGIRequest object&gt;, self.<strong>server</strong>&nbsp;= &lt;flup.server.fcgi.WSGIServer object&gt;, self.server.<strong>handler</strong>&nbsp;= &lt;bound method WSGIServer.handler of &lt;flup.server.fcgi.WSGIServer object&gt;&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///usr/lib/python2.7/dist-packages/flup/server/fcgi_base.py">/usr/lib/python2.7/dist-packages/flup/server/fcgi_base.py</a> in <strong>handler</strong>(self=&lt;flup.server.fcgi.WSGIServer object&gt;, req=&lt;flup.server.fcgi_base.CGIRequest object&gt;)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1116</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1117</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try:<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;1118</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;self.application(environ,&nbsp;start_response)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1119</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;1120</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;data&nbsp;in&nbsp;result:<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>result</strong>&nbsp;= None, <strong>self</strong>&nbsp;= &lt;flup.server.fcgi.WSGIServer object&gt;, self.<strong>application</strong>&nbsp;= &lt;__main__.Abe instance&gt;, <strong>environ</strong>&nbsp;= {'HOME': '/home/explorer', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LOGNAME': 'explorer', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:d...*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'MAIL': '/var/mail/explorer', 'OLDPWD': '/home/explorer', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'PATH_INFO': '', 'PWD': '/home/explorer/explorer', ...}, <strong>start_response</strong>&nbsp;= &lt;function start_response&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///home/explorer/explorer/Kobocoin-Abe/abe.py">/home/explorer/explorer/Kobocoin-Abe/abe.py</a> in <strong>__call__</strong>(abe=&lt;__main__.Abe instance&gt;, env={'HOME': '/home/explorer', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LOGNAME': 'explorer', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:d...*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'MAIL': '/var/mail/explorer', 'OLDPWD': '/home/explorer', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'PATH_INFO': '', 'PWD': '/home/explorer/explorer', ...}, start_response=&lt;function start_response&gt;)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;227</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;page['post']&nbsp;=&nbsp;env['wsgi.input'].read()<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;228</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;229</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;abe.fix_path_info(env):<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;230</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;abe.log.debug("fixed&nbsp;path_info")<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;231</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;redirect(page)<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>abe</strong>&nbsp;= &lt;__main__.Abe instance&gt;, abe.<strong>fix_path_info</strong>&nbsp;= &lt;bound method Abe.fix_path_info of &lt;__main__.Abe instance&gt;&gt;, <strong>env</strong>&nbsp;= {'HOME': '/home/explorer', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LOGNAME': 'explorer', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:d...*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'MAIL': '/var/mail/explorer', 'OLDPWD': '/home/explorer', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'PATH_INFO': '', 'PWD': '/home/explorer/explorer', ...}</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///home/explorer/explorer/Kobocoin-Abe/abe.py">/home/explorer/explorer/Kobocoin-Abe/abe.py</a> in <strong>fix_path_info</strong>(abe=&lt;__main__.Abe instance&gt;, env={'HOME': '/home/explorer', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LOGNAME': 'explorer', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:d...*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'MAIL': '/var/mail/explorer', 'OLDPWD': '/home/explorer', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'PATH_INFO': '', 'PWD': '/home/explorer/explorer', ...})</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;2117</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pi&nbsp;=&nbsp;env['PATH_INFO']<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;2118</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pi&nbsp;=&nbsp;posixpath.normpath(pi)<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;2119</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;pi[-1]&nbsp;!=&nbsp;'/'&nbsp;and&nbsp;env['PATH_INFO'][-1]&nbsp;==&nbsp;'/':<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;2120</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pi&nbsp;+=&nbsp;'/'<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;2121</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;pi&nbsp;==&nbsp;'/':<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>pi</strong>&nbsp;= '.', <strong>env</strong>&nbsp;= {'HOME': '/home/explorer', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LOGNAME': 'explorer', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:d...*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'MAIL': '/var/mail/explorer', 'OLDPWD': '/home/explorer', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'PATH_INFO': '', 'PWD': '/home/explorer/explorer', ...}</font></small></td></tr></table><p><strong>&lt;type 'exceptions.IndexError'&gt;</strong>: string index out of range
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+('string index out of range',)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>message&nbsp;=
+'string index out of range'
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/flup/server/fcgi_base.py", line 558, in run
+    protocolStatus, appStatus = self.server.handler(self)
+  File "/usr/lib/python2.7/dist-packages/flup/server/fcgi_base.py", line 1118, in handler
+    result = self.application(environ, start_response)
+  File "/home/explorer/explorer/Kobocoin-Abe/abe.py", line 229, in __call__
+    if abe.fix_path_info(env):
+  File "/home/explorer/explorer/Kobocoin-Abe/abe.py", line 2119, in fix_path_info
+    if pi[-1] != '/' and env['PATH_INFO'][-1] == '/':
+IndexError: string index out of range
+
+-->

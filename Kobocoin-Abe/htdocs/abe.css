@@ -1,0 +1,98 @@
+html, body{
+    background-image: none;
+}
+.shortlink {
+    font-size: smaller;
+}
+th{
+    padding-left: 10px;
+}
+section#main{
+    width: 100%;
+}
+#kobocoinexplorerinfo{
+	display: block;
+	margin: 50px auto 20px auto;
+}
+#links{
+    position: absolute;
+    right: 40px;
+    top: 36px;
+}
+#links a{
+    display: block;
+    padding: 5px;
+}
+#footer{
+    text-align: center;
+    height: 60px;
+    clear: both;
+    padding: 10px;
+}
+#search .module_content{
+	margin: 0;
+	margin-bottom: 1px;
+}
+#searchBar{
+    width: calc(100% - 10px);
+    height: 35px;
+    padding-left: 10px;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: bold;
+    background-color: #FFF;
+}
+#nav{
+    position: relative;
+    margin: 0 20px 2px 20px;
+    font-weight: bold;
+    height: 40px;
+}
+#nav p{
+    position: absolute;
+    top: 0;
+}
+#navP2{
+    text-align: center;
+    width: 200px;
+    left: calc(50% - 100px);
+}
+#navP1, #navP3{
+    width: 60px;
+}
+#navP3{
+    right: 0;
+}
+#navP1 a, #navP3 a{
+    padding: 0 4px;
+    font-size: 13px;
+}
+strong{
+    padding-right: 3px;
+}
+.module_content{
+    line-height: 1.5em;
+}
+.width_3_quarter {
+    width: 75%;
+}
+.center3Quart{
+    margin-left: 12%;
+}
+.negativeValue{
+    color: #C00;
+}
+#limitTxs{
+    text-align: center;
+}
+.chart{
+    width: 90%;
+    height: 250px;
+    left: 5%;
+    margin: 12px 0;
+}
+#poolShare{
+    height: 300px;
+}
+
